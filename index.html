@@ -1,275 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>JacksonStackCoding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta property="og:type" content="website">
 <meta property="og:title" content="JacksonStackCoding">
 <meta property="og:url" content="https://jacksonstack.github.io/index.html">
 <meta property="og:site_name" content="JacksonStackCoding">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="kylin">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="JacksonStackCoding" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>JacksonStackCoding</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
 
-  
-  
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
 <link rel="stylesheet" href="/css/style.css">
 
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="JacksonStackCoding" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+    <div class="content index py4 h-card">
+        
+          <header id="header">
+  <a class="u-url u-uid" href="/">
   
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
+      <img id="logo" alt class="u-logo" src="/images/logo.png" />
+    
   
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">JacksonStackCoding</a>
-      </h1>
-      
+    <div id="title">
+      <h1 class="p-name">JacksonStackCoding</h1>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jacksonstack.github.io"></form>
-      </div>
-    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="目录"><i class="fa-solid fa-bars fa-2x"></i></a>
+      </li>
+      <!--
+     --><li><a href="/">首页</a></li><!--
+   --><!--
+     --><li><a href="/about/">关于</a></li><!--
+   --><!--
+     --><li><a href="/archives/">归档</a></li><!--
+   --><!--
+     --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+   -->
+    </ul>
   </div>
 </header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-leveldb note" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/09/09/leveldb%20note/" class="article-date">
-  <time class="dt-published" datetime="2023-09-09T13:24:02.417Z" itemprop="datePublished">2023-09-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="leveldb实现解析-那岩"><a href="#leveldb实现解析-那岩" class="headerlink" title="leveldb实现解析    那岩"></a>leveldb实现解析    那岩</h1><h2 id="一-代码目录结构"><a href="#一-代码目录结构" class="headerlink" title="一 代码目录结构"></a>一 代码目录结构</h2><h3 id="1-doc-x2F"><a href="#1-doc-x2F" class="headerlink" title="1. doc&#x2F;"></a>1. doc&#x2F;</h3><h3 id="2-include-x2F-leveldb-x2F"><a href="#2-include-x2F-leveldb-x2F" class="headerlink" title="2.include&#x2F;leveldb&#x2F;"></a>2.include&#x2F;leveldb&#x2F;</h3><h3 id="3-db-x2F"><a href="#3-db-x2F" class="headerlink" title="3. db&#x2F;"></a>3. db&#x2F;</h3><p>主要逻辑的实现。包括：</p>
-<ul>
-<li>接口的实现 （db_impl&#x2F;db_iter)</li>
-<li>内部结构的定义（dbformat&#x2F;memtable&#x2F;skiplist&#x2F;write_batch)</li>
-<li>db运行状态以及操作的包装</li>
-<li>log格式相关</li>
-<li>filename处理相关</li>
-<li>sstable相关</li>
-</ul>
-<h3 id="4-table-x2F"><a href="#4-table-x2F" class="headerlink" title="4. table&#x2F;"></a>4. table&#x2F;</h3><p>sstable相关的数据格式定义以及操作实现</p>
-<h3 id="5-port-x2F"><a href="#5-port-x2F" class="headerlink" title="5. port&#x2F;"></a>5. port&#x2F;</h3><h3 id="6-util-x2F"><a href="#6-util-x2F" class="headerlink" title="6.util&#x2F;"></a>6.util&#x2F;</h3><h3 id="7-helper-x2F-memenv-x2F"><a href="#7-helper-x2F-memenv-x2F" class="headerlink" title="7. helper&#x2F;memenv&#x2F;"></a>7. helper&#x2F;memenv&#x2F;</h3><p>​	实现了一个简单的完全内存的文件系统，提供操作目录文件的接口。</p>
-<h2 id="二-基本概念"><a href="#二-基本概念" class="headerlink" title="二 基本概念"></a>二 基本概念</h2><h3 id="1-Slice-include-x2F-leveldb-x2F-slice-h"><a href="#1-Slice-include-x2F-leveldb-x2F-slice-h" class="headerlink" title="1. Slice(include&#x2F;leveldb&#x2F;slice.h)"></a>1. Slice(include&#x2F;leveldb&#x2F;slice.h)</h3><p>为操作数据的方便，将数据和长度包装成 Slice 使用，直接操控指针避免不必要的数据拷贝。</p>
-<h3 id="2-Option-include-x2F-leveldb-x2F-optin-h"><a href="#2-Option-include-x2F-leveldb-x2F-optin-h" class="headerlink" title="2. Option(include&#x2F;leveldb&#x2F;optin.h)"></a>2. Option(include&#x2F;leveldb&#x2F;optin.h)</h3><p>leveldb 中启动时的一些配置，通过 Option 传入，get&#x2F;put&#x2F;delete 时，也有相应的 ReadOption&#x2F;WriteOption。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// include/leveldb/option.h</span></span><br><span class="line">Options &#123;</span><br><span class="line"> <span class="comment">// 传入的 comparator</span></span><br><span class="line"> <span class="type">const</span> Comparator* comparator;</span><br><span class="line"> <span class="comment">// open 时，如果 db 目录不存在就创建</span></span><br><span class="line"> <span class="type">bool</span> create_if_missing;</span><br><span class="line"> <span class="comment">// open 时，如果 db 目录存在就报错</span></span><br><span class="line"> <span class="type">bool</span> error_if_exists;</span><br><span class="line"> <span class="comment">// 是否保存中间的错误状态(RecoverLog/compact),compact 时是否读到的 block 做检验。</span></span><br><span class="line"> <span class="type">bool</span> paranoid_checks;</span><br><span class="line"> <span class="comment">// 传入的 Env。</span></span><br><span class="line"> Env* env;</span><br><span class="line"> <span class="comment">// 传入的打印日志的 Logger</span></span><br><span class="line"> Logger* info_log;</span><br><span class="line"> <span class="comment">// memtable 的最大 size</span></span><br><span class="line"> <span class="type">size_t</span> write_buffer_size;</span><br><span class="line"> <span class="comment">// db 中打开的文件最大个数</span></span><br><span class="line"> <span class="comment">// db 中需要打开的文件包括基本的 CURRENT/LOG/MANIFEST/LOCK, 以及打开的 sstable 文件。</span></span><br><span class="line"> <span class="comment">// sstable 一旦打开，就会将 index 信息加入 TableCache，所以把</span></span><br><span class="line"> <span class="comment">// (max_open_files - 10)作为 table cache 的最大数量.</span></span><br><span class="line"> <span class="type">int</span> max_open_files;</span><br><span class="line"> <span class="comment">// 传入的 block 数据的 cache 管理</span></span><br><span class="line"> Cache* block_cache;</span><br><span class="line"> <span class="comment">// sstable 中 block 的 size</span></span><br><span class="line"> <span class="type">size_t</span> block_size;</span><br><span class="line"> <span class="comment">// block 中对 key 做前缀压缩的区间长度</span></span><br><span class="line"> <span class="type">int</span> block_restart_interval;</span><br><span class="line"> <span class="comment">// 压缩数据使用的压缩类型（默认支持 snappy，其他类型需要使用者实现）</span></span><br><span class="line"> CompressionType compression;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// include/leveldb/option.h</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">ReadOptions</span> &#123;</span><br><span class="line"> <span class="comment">// 是否对读到的 block 做校验</span></span><br><span class="line"> <span class="type">bool</span> verify_checksums;</span><br><span class="line"> <span class="comment">// 读到的 block 是否加入 block cache</span></span><br><span class="line"> <span class="type">bool</span> fill_cache;</span><br><span class="line"> <span class="comment">// 指定读取的 SnapShot</span></span><br><span class="line"> <span class="type">const</span> Snapshot* snapshot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// include/leveldb/option.h</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">WriteOptions</span> &#123;</span><br><span class="line"> <span class="comment">// write 时，记 binlog 之后，是否对 binlog 做 sync。</span></span><br><span class="line"> <span class="type">bool</span> sync;</span><br><span class="line"> <span class="comment">// 如果传入不为 NULL，write 完成之后同时做 SnapShot.</span></span><br><span class="line"> <span class="type">const</span> Snapshot** post_write_snapshot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>另外还有一些编译时的常量，与 Option 一起控制。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// db/dbformat.h</span></span><br><span class="line"><span class="keyword">namespace</span> config &#123;</span><br><span class="line"> <span class="comment">// level 的最大值</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kNumLevels = <span class="number">7</span>;</span><br><span class="line"> <span class="comment">// level-0 中 sstable 的数量超过这个阈值，触发 compact</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kL0_CompactionTrigger = <span class="number">4</span>;</span><br><span class="line"> <span class="comment">// level-0 中 sstable 的数量超过这个阈值, 慢处理此次写(sleep1ms）</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kL0_SlowdownWritesTrigger = <span class="number">8</span>;</span><br><span class="line"> <span class="comment">// level-0 中 sstable 的数量超过这个阈值, 阻塞至 compact memtable 完成。</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kL0_StopWritesTrigger = <span class="number">12</span>;</span><br><span class="line"> <span class="comment">// memtable dump 成的 sstable，允许推向的最高 level </span></span><br><span class="line"><span class="comment">// （参见 Compact 流程的 VersionSet::PickLevelForMemTableOutput()）</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kMaxMemCompactLevel = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// db/version_set.cc</span></span><br><span class="line"><span class="keyword">namespace</span> leveldb &#123;</span><br><span class="line"> <span class="comment">// compact 过程中，level-0 中的 sstable 由 memtable 直接 dump 生成，不做大小限制</span></span><br><span class="line"> <span class="comment">// 非 level-0 中的 sstable 的大小设定为 kTargetFileSize</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int</span> kTargetFileSize = <span class="number">2</span> * <span class="number">1048576</span>;</span><br><span class="line"> <span class="comment">// compact level-n 时，与 level-n+2 产生 overlap 的数据 size （参见 Compaction）</span></span><br><span class="line"> <span class="type">static</span> <span class="type">const</span> <span class="type">int64_t</span> kMaxGrandParentOverlapBytes = <span class="number">10</span> * kTargetFileSize;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3-Env-（include-x2F-leveldb-x2F-env-h-util-x2F-env-posix-h）"><a href="#3-Env-（include-x2F-leveldb-x2F-env-h-util-x2F-env-posix-h）" class="headerlink" title="3. Env （include&#x2F;leveldb&#x2F;env.h util&#x2F;env_posix.h）"></a>3. Env （include&#x2F;leveldb&#x2F;env.h util&#x2F;env_posix.h）</h3><p>考虑到移植以及灵活性，leveldb 将系统相关的处理（文件&#x2F;进程&#x2F;时间之类）抽象成 Env，用户可以自 己实现相应的接口，作为 Option 传入。默认使用自带的实现。</p>
-<h3 id="4-varient-util-x2F-coding-h"><a href="#4-varient-util-x2F-coding-h" class="headerlink" title="4. varient(util&#x2F;coding.h)"></a>4. varient(util&#x2F;coding.h)</h3><p>leveldb 采用了 protocalbuffer 里使用的变长整形编码方法，节省空间</p>
-<h3 id="5-ValueType（db-x2F-dbformat-h）"><a href="#5-ValueType（db-x2F-dbformat-h）" class="headerlink" title="5. ValueType（db&#x2F;dbformat.h）"></a>5. ValueType（db&#x2F;dbformat.h）</h3><p>leveldb 更新（put&#x2F;delete）某个 key 时不会操控到 db 中的数据，每次操作都是直接新插入一份 kv 数 据，具体的数据合并和清除由后台的 compact 完成。所以，每次 put，db 中就会新加入一份 KV 数据， 即使该 key 已经存在；而 delete 等同于 put 空的 value。为了区分真实 kv 数据和删除操作的 mock 数 据，使用 ValueType 来标识： </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">ValueType</span> &#123;</span><br><span class="line">  kTypeDeletion = <span class="number">0x0</span>,</span><br><span class="line">  kTypeValue = <span class="number">0x1</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>​	</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jacksonstack.github.io/2023/09/09/leveldb%20note/" data-id="cln4x3ugc0001z07k1fos7782" data-title="" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/13/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-06-13T08:39:37.564Z" itemprop="datePublished">2023-06-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
+        <section id="about" class="p-note">
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/13/hello-world/">Hello World</a>
-    </h1>
   
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jacksonstack.github.io/2023/06/13/hello-world/" data-id="cln4x3ugj0003z07k2rspfzgm" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+    <p>
+      在这里找到我：
       
       
       
-    </footer>
-  </div>
+        
+        
+          <a class="icon u-url" target="_blank" rel="noopener me" href="http://github.com/probberechts/cactus-dark" aria-label="github" title="github">
+            <i class="fa-brands fa-github"></i><!--
+      ---></a><!--
+    ---><!--
+    --->， 
+        
+      
+        
+        
+          <a class="icon u-url" target="_blank" rel="noopener me" href="/" aria-label="twitter" title="twitter">
+            <i class="fa-brands fa-twitter"></i><!--
+      ---></a><!--
+    ---><!--
+    --->， 
+        
+      
+        
+        
+          <a class="icon u-url" target="_blank" rel="noopener me" href="/" aria-label="facebook" title="facebook">
+            <i class="fa-brands fa-facebook"></i><!--
+      ---></a><!--
+    ---><!--
+    --->， 
+        
+      
+        
+        
+          <a class="icon u-email" target="_blank" rel="noopener" href="mailto:name@email.com" aria-label="mail" title="mail">
+            <i class="fa-solid fa-envelope"></i><!--
+      ---></a>
+        <!--
+    --->， 
+        
+      
+        
+        
+          <a class="icon u-url" target="_blank" rel="noopener me" href="https://mastodon.social/@alice" aria-label="mastodon.social" title="mastodon.social">
+            <i class="fa-brands fa-mastodon"></i><!--
+      ---></a><!--
+    ---><!--
+    ---> 和 
+        
+      
+        
+        
+          <a class="icon u-url" target="_blank" rel="noopener me" href="https://fosstodon.org/@alice" aria-label="fosstodon.org" title="fosstodon.org">
+            <i class="fa-brands fa-mastodon"></i><!--
+      ---></a><!--
+    ---><!--
+    --->.
+        
+      
+    </p>
   
-</article>
-
-
-
-  
-
-
 </section>
-        
-          <aside id="sidebar">
-  
-    
 
+<section id="writing">
+  <span class="h1"><a href="/archives/">文章</a></span>
   
+  <ul class="post-list">
     
-
-  
     
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">九月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">六月 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/09/09/leveldb%20note/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/06/13/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
       
-      &copy; 2023 kylin<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2023-09-09T13:24:02.417Z" class="dt-published" itemprop="datePublished">2023-09-09</time>
+        
+      
     </div>
+
+
+        <span>
+    
+        <a class="" href="/2023/09/09/leveldb%20note/">Untitled</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+      
+        
+          <time datetime="2023-06-13T08:39:37.564Z" class="dt-published" itemprop="datePublished">2023-06-13</time>
+        
+      
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2023/06/13/hello-world/">Hello World</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+  
+</section>
+
+
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2023
+    kylin
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+     -->
+      </ul>
+    </nav>
   </div>
 </footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
+    <!-- styles -->
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 
 
 
 
-<script src="/js/script.js"></script>
+<!-- clipboard -->
 
 
+<script src="/js/main.js"></script>
 
+<!-- search -->
 
+<!-- Baidu Analytics -->
 
-  </div>
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
 </body>
 </html>
