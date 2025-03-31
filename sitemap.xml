@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jacksonstack.github.io/2025/04/01/testc/</loc>
+    
+    <lastmod>2025-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacksonstack.github.io/2025/04/01/testb/</loc>
+    
+    <lastmod>2025-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacksonstack.github.io/2025/04/01/leveldb-note/</loc>
+    
+    <lastmod>2025-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacksonstack.github.io/2025/04/01/en/hello-world/</loc>
+    
+    <lastmod>2025-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jacksonstack.github.io/tags/index.html</loc>
     
     <lastmod>2023-09-28</lastmod>
@@ -19,28 +55,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://jacksonstack.github.io/2023/09/09/leveldb%20note/</loc>
-    
-    <lastmod>2023-09-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacksonstack.github.io/2023/06/13/hello-world/</loc>
-    
-    <lastmod>2023-06-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://jacksonstack.github.io/</loc>
-    <lastmod>2023-09-29</lastmod>
+    <lastmod>2025-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
